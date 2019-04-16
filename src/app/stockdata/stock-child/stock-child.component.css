@@ -1,0 +1,49 @@
+.quote {
+    margin-top: 50px;
+  }
+
+  
+  
+  path.candle {
+    stroke: #000000;
+  }
+  
+  path.candle.body {
+    stroke-width: 0;
+  }
+  
+  path.candle.up {
+    fill: #00aa00;
+    stroke: #00aa00;
+  }
+  
+  path.candle.down {
+    fill: #ff0000;
+    stroke: #ff0000;
+  }
+  
+  .crosshair {
+    cursor: crosshair;
+  }
+  
+  .crosshair path.wire {
+    stroke: #dddddd;
+    stroke-dasharray: 1, 1;
+  }
+  
+  .crosshair .axisannotation path {
+    fill: #dddddd;
+  }
+  .data-container
+  {
+      width:50%;
+      float: left;
+
+  }
+  .graph
+{
+    height: 300px; 
+    width: 50%; 
+    margin-top: 5%;
+
+}

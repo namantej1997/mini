@@ -1,0 +1,61 @@
+
+*{
+    margin:0%;
+    padding:0%;
+
+}.subButton
+{
+    margin-left: 20px;;
+}
+.sybmolInput
+{
+    display: inline-block; 
+}
+.mainDiv
+{
+    display: inline;
+    text-align:center
+}
+.spin
+{
+    float: center;
+    margin-left: 50%;
+    margin-top: 5%;
+}
+.error
+{
+    text-align: center;
+}
+ul li{
+    display: inline-block;
+}
+.fav_button
+{
+    margin-left:25%;
+}
+.gridView
+{
+    float:center;
+    text-align: center;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+.btn{
+    margin-top: 2%;
+    text-align: center;
+    margin-right: 25%;
+
+}
+.headerDiv{
+    background-color: #0071ce;
+    padding-top: 1%;
+    padding-bottom: 0.8%;
+    width:100%;
+    height:20%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+.headlineDiv
+{
+    color:white;  
+}

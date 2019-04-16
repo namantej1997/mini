@@ -1,0 +1,13 @@
+<div style="height: 100%; width:100%;box-sizing: border-box;">
+  <ag-grid-angular
+  class="ag-theme-blue"
+    #agGrid
+    style="width: 80%; height: 400px;"
+    id="myGrid"
+    [columnDefs]="columnDefs"
+    [rowData]="rowData"
+    [context]="context"
+    [frameworkComponents]="frameworkComponents"
+    (gridReady)="onGridReady(event)"
+  ></ag-grid-angular>
+</div>

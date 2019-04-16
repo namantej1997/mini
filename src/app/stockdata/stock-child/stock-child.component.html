@@ -1,0 +1,23 @@
+<div>
+  <div class="container-fluid">
+    <div class="data-container">
+      <mat-list>
+        <mat-list-item style="width:100%">Company Symbol: {{stockDataResponse.companySymbol}}</mat-list-item>
+        <mat-divider style="width:100%"></mat-divider>
+        <mat-list-item style="width:100%">Company Name: {{stockDataResponse.companyName}}</mat-list-item>
+        <mat-divider style="width:100%"></mat-divider>
+        <mat-list-item style="width:100%">Latest Price: {{stockDataResponse.LatestPrice}}</mat-list-item>
+        <mat-divider style="width:100%"></mat-divider>
+        <mat-list-item style="width:100%">Change: {{stockDataResponse.change}}</mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>Change Percent: {{stockDataResponse.changePercentage}}</mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>Latest Time: {{stockDataResponse.latestTime}}</mat-list-item>
+        <mat-divider></mat-divider>
+      </mat-list>
+
+    </div>
+    <div id="chartContainer" class="graph"></div>
+
+  </div>
+</div>

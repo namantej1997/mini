@@ -1,0 +1,51 @@
+<div style="text-align:center" class="mainDiv">
+  <div class="headerDiv">
+    <div class="headlineDiv">
+     <h2> Mini Project</h2>
+      </div>
+    </div>
+  <ul>
+    <li>
+  <form [formGroup]="stockForm" (ngSubmit)="onSubmit()">
+    <ul>
+      <li>
+    <div class="symbolInput">
+      <mat-form-field>
+        <input matInput type="text"(change)="validdateForm()" class="form-control full-width" formControlName="symbol" placeholder="Enter symbol" >
+        </mat-form-field>
+      </div>
+      </li>
+      <li>
+      <div class="subButton">
+        <span matTooltip="{{disableSearch ? 'Please Enter Sybmol' : ''}}">
+        <button mat-raised-button [disabled]="disableSearch"  color="primary"type="submit">Search</button>
+      </span>
+      </div>
+      </li>
+      </ul>
+    </form>
+  </li>
+  <li>
+    <div class="fav_button">
+      <button mat-raised-button color="primary" (click)="viewFavourite($event)"[disabled]="disableView">View Favourites</button>
+      </div>
+      </li>
+    </ul>
+    <div *ngIf="isLoading" class="spin">
+      <mat-spinner></mat-spinner>
+      </div>
+      <div *ngIf="error" class="error">
+        <mat-error>{{errorMessage}}</mat-error>>
+      </div>
+      <div *ngIf="showFavourite" class="gridView">
+          <app-ag-grid  (success)="OnSuccess(event)" (onError)="error(event)" (notify)="OnNotify(event)"></app-ag-grid>
+      </div>
+    <div class="output1" *ngIf="dataLoad">
+    <app-stock-child [stockDataResponse]="stockDataResponse" [graphData]="graphData"></app-stock-child>
+    <div class="btn">
+        <button mat-raised-button color="primary" (click)="addToFavourites()">Add To Favourite</button>
+      </div>
+    </div>
+    
+</div>
+<router-outlet></router-outlet>
